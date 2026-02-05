@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!--<h1>Bluel</h1>-->
+            <h2>Sophie Bluel</h2>
+            <p>architecte d’intérieur</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">projets</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a class="active" href="#">login</a></li>
+                <li><a href="#"><img src="./assets/icons/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="#">
+                <h2>Log In</h2>
+                <fieldset>
+                    <div class="form-group">
+                        <label for="email"><p>E-mail</p></label>
+                        <input type="text" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password"><p>Mot de passe</p></label>
+                        <input type="password" id="password" name="password" required minlength="4">
+                    </div>
+                    <p id="error-message"></p>
+
+                    <button type="submit" id="btnLogin">Se connecter</button>
+                    <a href="#"><p>Mot de passe oublier</p></a>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="#"><p>Mentions légales</p></a>
+    </footer>
+
+    <script src="script/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/** end reset css**/
+
+
+
+:root {
+    /* Définition de vos couleurs */
+    --primary-color: #1D6154;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+html{
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 10px;
+}
+
+/** **/
+body{
+    line-height: 1;
+    background-color: #FFFEF8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    margin: 0;
+}
+header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    margin: auto;
+}
+.logo{
+    color: #B1663C;
+}
+.logo h2{
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 2rem;
+}
+nav ul li a{
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+nav a.active {
+  font-weight: bold;
+}
+
+nav ul li a img{
+    font-size: 12px;
+    width: 0.9rem;
+    height: 0.9rem;
+    vertical-align: middle;
+}
+main{
+    width: 100%;
+    flex: 11;
+}
+
+section{
+    margin: auto;
+    width: 25%;
+    margin-top: 4rem;
+}
+form h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-group input{
+    height: 2rem;
+    border: transparent;
+    outline: none;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+fieldset button{
+    width: 50%;
+    margin: auto;
+    background-color: var(--primary-color);
+    border-radius: 60px;
+    border: none;
+    color: white;
+    height: 2rem;
+    cursor: pointer;
+}
+fieldset a p {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    padding: 1.5rem;
+}
+footer a p{
+    color: black;
+}
+
+#error-message {
+    color: #D31010; /* Un rouge sombre */
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    min-height: 1.2rem; /* Évite que le formulaire "saute" quand le texte apparaît */
+}

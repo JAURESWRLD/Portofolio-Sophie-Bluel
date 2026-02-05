@@ -1,0 +1,426 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+html{
+	font-size: 16px;
+}
+p{
+	font-size: 0.8rem;
+}
+
+:root{
+	--primary-color: #1D6154;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button{
+	cursor: pointer;
+}
+/** end reset css**/
+body {
+	max-width: 1140px;
+	margin:auto;
+	font-family: 'Work Sans' ;
+	font-size: 14px;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0
+}
+section {
+	margin: 50px 0
+}
+
+h1{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Syne';
+	font-size: 22px;
+	font-weight: 800;
+	color: #B1663C
+}
+
+h1 > span {
+	font-family: 'Work Sans';
+	font-size:10px;
+	letter-spacing: 0.1em;
+;
+}
+
+h2{
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 30px;
+	color: #1D6154
+}
+nav ul {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+
+}
+nav li {
+	padding: 0 10px;
+	font-size: 1.2em;
+}
+
+li:hover {
+	color: #B1663C;
+}
+#introduction {
+	display: flex;
+	align-items: center;
+}
+#introduction figure {
+	flex: 1
+}
+#introduction img {
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+#introduction article {
+	flex: 1
+}
+#introduction h2 {
+	margin-bottom: 1em;
+}
+
+#introduction p {
+	margin-bottom: 0.5em;
+}
+#portfolio h2 {
+	text-align: center;
+}
+.titreProjet{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1em;
+	gap: 1rem;
+}
+.filters{
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-bottom: 2.5rem;
+}
+.btn-filter{
+	color: var(--primary-color);
+	border-radius: 15px 15px;
+	padding: 5px 15px 5px;
+	border: 1px solid #1D6154;
+	cursor: pointer;
+	background-color: transparent;
+}
+button.active{
+	background-color: #1D6154;
+	color: white;
+	transition: 300ms all ease;
+}
+.gallery {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.gallery img {
+	width: 100%;
+
+}
+#contact {
+	width: 50%;
+margin: auto;
+}
+#contact > * {
+	text-align: center;
+
+}
+#contact h2{
+	margin-bottom: 20px;
+}
+#contact form {
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#contact label {
+	margin: 2em 0 1em 0;
+}
+#contact textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+input[type="submit"]{
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px ;
+}
+.icon-modifier{
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	vertical-align: baseline;
+}
+
+footer nav ul {
+	display: flex;
+	justify-content: flex-end;
+	margin: 2em
+}
+
+.modal {
+	width: 100%;
+  	border: none;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	max-width: 500px;
+}
+
+.modal::backdrop {
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(1px);
+}
+
+
+
+
+.modal a i#closeModal{
+	float: right;
+}
+.modal a i#backModal{
+	float: left;
+}
+.contenaireImage {
+	width: 80%;
+	margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); 
+    padding: 40px 0px;
+	gap: 5px;
+	row-gap: 20px;
+}
+.element-image{
+	aspect-ratio: 1/1;
+}
+.element-image img{
+	width: 100%;
+	object-fit: cover;
+}
+.icon-delete{
+	top: 5px;
+	right: 5px;
+	z-index: 2;
+}
+
+.icon-delete i{
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 6px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.modal .btn-ajouter{
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+	background-color: var(--primary-color);
+	border-radius: 20px;
+	padding: 10px 20px;
+	border: none;
+	color: white;
+}
+
+.modal hr{
+	width: 80%;
+	margin-bottom: 2rem;
+}
+
+.hidden{
+	display: none;
+}
+.modal-add-projet h3{
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	font-size:1.2rem;
+}
+.modal-add-projet{
+	width: 100%;
+	
+}
+.modal-add-projet form{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#form-ajout-projet{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.5rem;
+}
+.upload-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #E8F1F6;
+    border-radius: 3px;
+    text-align: center;
+	gap: 0.4rem;
+	padding: 0;
+	position: relative;
+}
+.upload-container i{
+	font-size: 76px;
+	color: #B9C5CC;
+	margin-top: 1rem;
+}
+.upload-container p{
+	margin-bottom: 1rem;
+}
+#file-upload{
+	display: none;
+}
+.custom-file-upload{
+	background-color: #CBD6DC;
+    color: #306685;
+    padding: 10px 33px;
+    border-radius: 50px;
+    cursor: pointer; /* Indique que c'est cliquable */
+    display: inline-block;
+    font-weight: 600;
+}
+
+
+#form-ajout-projet label{
+	font-size: 0.7rem;
+}
+#form-ajout-projet input{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	outline: none;
+	margin-bottom: 15px;
+	font-family: inherit;
+	font-size: inherit;
+}
+#form-ajout-projet select{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	margin-bottom: 15px; /* Spacing between fields */
+	font-family: inherit;
+	font-size: inherit;
+}
+.modal #form-ajout-projet hr{
+	width: 100%;
+}
+#btn-valider{
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 30px;
+	background-color: #A7A7A7;
+	border: none;
+	color: white;
+	padding: 10px;
+}
+#image-preview {
+    display: none;  
+    margin: 0 auto;
+    object-fit: contain;
+	width: 35%;
+    height: 100%;
+}
+
+#modal-error-msg {
+    color: #ff0000;
+    font-family: 'Syne'; /* Project font */
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 10px;
+    visibility: hidden; /* Hidden by default */
+}

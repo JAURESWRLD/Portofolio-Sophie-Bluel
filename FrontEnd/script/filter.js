@@ -10,19 +10,22 @@ async function getCategories() {
     const result = await response.json();
     if (Array.isArray(result)){
     const categories = result.map(cat => cat.name);
-    const allCategories = ['tous', ...new Set(categories)];
+    const allCategories = ['Tous', ...new Set(categories)];
 
     const container = document.querySelector('.filters');
     allCategories.forEach(category => {
       const boutton = document.createElement('button');
       boutton.textContent = category;
       boutton.classList.add('btn-filter');
+      if (category === 'Tous') {
+      boutton.classList.add('active');
+    }
       boutton.addEventListener('click', ()=> {
 
       document.querySelectorAll('.btn-filter').forEach(b => b.classList.remove('active'));
       boutton.classList.add('active');
       
-      const filteredCategory = (category === 'tous')
+      const filteredCategory = (category === 'Tous')
       ? allWorks
       : allWorks.filter(work => work.category.name === category)
 

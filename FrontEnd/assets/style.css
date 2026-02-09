@@ -127,6 +127,7 @@ li:hover {
 #introduction {
 	display: flex;
 	align-items: center;
+	margin-bottom: 7rem;
 }
 #introduction figure {
 	flex: 1
@@ -154,14 +155,14 @@ li:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 1em;
+	margin-bottom: 3rem;
 	gap: 1rem;
 }
 .filters{
 	display: flex;
 	justify-content: center;
 	gap: 0.5rem;
-	margin-bottom: 2.5rem;
+	margin-bottom: 3rem;
 }
 .btn-filter{
 	color: var(--primary-color);
@@ -423,4 +424,19 @@ footer nav ul {
     text-align: center;
     margin-top: 10px;
     visibility: hidden; /* Hidden by default */
+}
+.edit-bar{
+	width: 100vw;
+	height: 3rem;	
+	background: #000;
+	color: white;
+	align-items: center;
+	position: relative;
+	left: 50%;                  /* Déplace l'élément au milieu de l'écran */
+  	right: 50%;
+  	margin-left: -50vw;         /* Tire l'élément vers la gauche de la moitié de l'écran */
+  	margin-right: -50vw;
+	text-align: center;
+	line-height: 3rem;
+	display: none;
 }

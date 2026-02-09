@@ -3,7 +3,6 @@ const boiteModale = document.getElementById('myModal');
 const ouvrirModalBtn = document.getElementById('openModal');
 const fermerModalBtn = document.getElementById('closeModal');
 const contenaireImage = document.querySelector('.contenaireImage')
-const mainContent = document.querySelector('main');
 
 
 ////////////////FUNCTION MODAL//////////////////////

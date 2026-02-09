@@ -2,9 +2,13 @@ function admnistrator(){
   const token = localStorage.getItem('token');
   const btnModifier = document.querySelector('.icon-modifier');
   const loginLink = document.querySelector('nav ul li a[href= "login.html"]');
+  const editionBar = document.querySelector('.edit-bar');
+  const filtersContainer = document.querySelector('.filters');
 
   if (token){
-    if (btnModifier) btnModifier.style.display = 'flex';
+    if (btnModifier) btnModifier.style.display = token ? 'flex' : 'none';
+    if (editionBar) editionBar.style.display = token ? 'block' : 'none';
+    if (filtersContainer) filtersContainer.style.display = token ? 'none' : 'flex';
     if (!btnModifier) return; 
     
     if (loginLink) {
@@ -16,8 +20,6 @@ function admnistrator(){
 
         window.location.href ='index.html';
       })
-    }else {
-      if (btnModifier) btnModifier.style.display = 'none';
     }
   }
 }
